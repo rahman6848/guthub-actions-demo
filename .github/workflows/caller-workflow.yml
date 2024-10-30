@@ -6,6 +6,6 @@ jobs:
   call-reusable:
     uses: ./.github/workflows/reusable-workflow.yml
     with:
-      name: 'Github Actions User'
+      name: 'GitHub Actions User'
     secrets:
       MY_SECRET: ${{ secrets.MY_SECRET }}
