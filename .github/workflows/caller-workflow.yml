@@ -1,0 +1,11 @@
+name: Caller Workflow
+
+on: [push]
+
+jobs:
+  call-reusable:
+    uses: ./.github/workflows/reusable-workflow.yml
+    with:
+      name: 'GitHub Actions User'
+    secrets:
+      MY_SECRET: ${{ secrets.MY_SECRET }}
